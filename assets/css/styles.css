@@ -81,6 +81,8 @@ p {
     box-sizing: border-box;
     margin: 15px auto;
     height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .profile-pic {
@@ -96,6 +98,10 @@ span {
     display: block;
     padding: 5px 0 5px 0;
     line-height: 2em;
+}
+
+.form-container {
+    width: 100%;
 }
 
 input {
@@ -121,7 +127,6 @@ textarea {
 /* Portfolio Styling */
 
 h3 {
-    position: relative;
     bottom: 105px;
     padding: 20px;
     background-color: #4aaaa5;
@@ -139,10 +144,37 @@ h3 {
     opacity: 0.5;
 }
 
+.text-box1 {
+    position: absolute;
+    bottom: 20px;
+}
+
+.text-box2 {
+    position: absolute;
+    bottom: 20px;
+
+}
+
+.text-box3 {
+    position: absolute;
+    bottom: 20px;
+
+}
+
+.text-box4 {
+    position: absolute;
+    bottom: 20px;
+
+}
+
+.text-box5 {
+    position: absolute;
+    bottom: 20px;
+
+}
 
 .text-block {
     background-color: #4aaaa5;
-    position: absolute;
     bottom: 20px;
     text-align: center;
     height: 10px;
@@ -155,7 +187,8 @@ h3 {
 }
 
 .flex-item {
-    margin: 0px 20px;
+    margin: 10px 20px;
+    position: relative;
 }
 
 /* Footer */
@@ -165,12 +198,84 @@ footer {
     border-top: 10px solid #4aaaa5;
     height: 80px;
     position: absolute;
-    bottom: 0;
     width: 100%;
     text-align: center;
+    clear: both;
 }
 
 .copyright {
     color: #cccccc;
     line-height: 80px;
 }
+
+/* Media Queries for three screen sizes */
+
+@media screen and (max-width: 980px) {
+    nav {
+        width: 70%;
+    }
+    
+    .container {
+      width: 70%;
+    }
+
+    h1 {
+        width: 40%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer {
+        margin: 5% auto;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+      width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .flex-item {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 10px auto;
+    }
+    
+  }
+
+  @media screen and (max-width: 640px) {
+    h1 {
+      width: 100%;
+    }
+
+    nav {
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation {
+        text-align: center;
+        float: none;
+
+    }
+
+    .flex-item {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        margin: 1% auto;
+    }
+
+    .flex-container {
+        text-align: center;
+    }
+
+  }
