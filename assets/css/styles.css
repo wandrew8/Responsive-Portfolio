@@ -26,7 +26,6 @@ h1 {
     color: #ffffff;
     font-family: 'Georgia', Times, Times New Roman, serif;
     display: inline-block;
-    width: 25%;
     text-align: center;
     height: 80px;
     line-height: 80px;
@@ -90,7 +89,7 @@ p {
     float: left;
     height: 200px;
     width: 275px;
-    padding: 15px 15px 15px 0;
+    padding: 2% 2% 2% 0;
 }
 
 /* Form Styling */
@@ -253,6 +252,11 @@ footer {
 
     .flex-container {
         text-align: center;
+    }
+
+    .profile-pic {
+        height: auto;
+        width: 100%;
     }
 
   }
